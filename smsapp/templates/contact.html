@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<div class="row my-5">
+  <h1 class="text-center">Contact Us</h1>
+  <div class="col-sm-10 mx-auto shadow">
+    <div class="row">
+      {% if msg %}
+      <div class="col-sm-12">
+        <div class="alert alert-success" role="alert">{{msg}}</div>
+      </div>
+      {% endif %}
+      <div class="col-sm-6">
+        <img src="{% static 'images/java.webp' %}" class="img-fluid mt-5" alt="">
+      </div>
+      <div class="col-sm-6">
+        <form method="post" class="row g-3" >
+          {% csrf_token %}
+          <div class="col-md-12">
+            <label for="name" class="form-label">Name</label>
+            <input name="name" type="text" class="form-control" id="name">
+          </div>
+          <div class="col-md-12">
+            <label for="gender" class="form-label">Gender</label>
+            <input name="gender" type="radio" value="male" class="form-check-input"> Male
+            <input name="gender" type="radio" value="female" class="form-check-input"> Female
+          </div>
+          <div class="col-md-12">
+            <label for="address" class="form-label">Address</label>
+            <textarea name="address" id="address" class="form-control"></textarea>
+          </div>
+          <div class="col-md-12">
+            <label for="contactno" class="form-label">Contact No</label>
+            <input name="contactno" type="text" class="form-control" id="contactno">
+          </div>
+          <div class="col-md-12">
+            <label for="email" class="form-label">Email</label>
+            <input name="emailaddress" type="email" class="form-control" id="email">
+          </div>
+          <div class="col-md-12">
+            <label for="enquiry" class="form-label">Enquiry Text</label>
+            <textarea name="enquirytext" class="form-control" id="enquiry"></textarea>
+          </div>
+          <div class="col-12 text-center pb-4">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <h1 class="text-center">Find us on Google Map <i class="fa-solid fa-location-dot"></i></h1>
+  <div class="col-md-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7120.4082585547385!2d81.54194!3d26.833459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a2b20aede4817%3A0x3b01691a0b580533!2sSeth%20Anandram%20Jaipuria%20School%2C%20Ved%20Campus%2C%20Barabanki%20Mob.%209415520130!5e0!3m2!1sen!2sin!4v1725885068114!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+
+{% endblock %}
+

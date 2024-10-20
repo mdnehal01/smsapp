@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+ <!-- Slider Section Start -->
+ <div class="row">
+  <div class="col-sm-12 p-0">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{% static 'images/slider1.jpg' %}" class="d-block w-100"  alt="..." height="500px" />
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/slider2.jpg' %}" class="d-block w-100" height="500px" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/slider3.jpg' %}" class="d-block w-100" height="500px" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span
+          class="carousel-control-prev-icon"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span
+          class="carousel-control-next-icon"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Slider Section End -->
+
+<!-- contact part start -->
+ <div class="row">
+  <div class="col-sm-12 py-2" style="background-color: #9e313f;">
+    <h4 class="text-center">TO KNOW ONLINE ADMISSION PROCESS, CALL – 8429054648, 8429054648</h4>
+  </div>
+ </div>
+<!-- contact part end -->
+
+<!-- about part start -->
+ <div class="row">
+  <div class="col-sm-12">
+    <h3 class="my-3 text-center">Welcome to Seth Anandram Jaipuria School, Barabanki</h3>
+    <div class="row">
+      <div class="col-sm-6 my-2">
+        <div class="card border border-0">
+          <div class="card-body">
+            <img src="{% static 'images/sign-in.png' %}" class="img-fluid mb-3" alt="" srcset="">
+            <div class="card-text">
+              We, at Seth Anandram Jaipuria School, Barabanki, are committed to ‘Empower, Enthuse and Excel’ in providing quality education and ensuring every child is taught the necessary values to guide him/her through the journey of life. Seth Anandram Jaipuria School endows education for LIFE! Our prime mission is to provide opportunities through a stimulating, safe and supportive environment for attaining personal mastery and team spirit through collaborative learning……
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 my-2">
+        <div class="card shadow">
+          <img src="{% static 'images/sign-in.png' %}" class="card-img-top img-fluid mb-3" alt="...">
+          <div class="card-body mb-5">  
+              <a href="#" class="card-link">5th Dr. Rajaram Jaipuria Memorial Lecture on “The Rise of India as Vishwa Guru – नया युग नई ऊँचाइयाँ”</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+<!-- about part end -->
+<hr>
+<!-- card start -->
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card" style="width: 24rem;">
+      <img src="{% static 'images/sign-in.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PRE-PRIMARY</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card" style="width: 24rem;">
+      <img src="{% static 'images/sign-in.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PRE-PRIMARY</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card" style="width: 24rem;">
+      <img src="{% static 'images/sign-in.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PRE-PRIMARY</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      </div>
+  </div>
+</div>
+<!-- card end -->
+
+
+
+{% endblock %}
+
+{% block title %}
+  SMS || Home
+{% endblock %}
